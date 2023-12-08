@@ -34,6 +34,12 @@ router.patch("/:productId", (req, res, next) => {
   });
 });
 
+router.put("/:productId", (req, res, next) => {
+  res.status(200).json({
+    message: "You putted an ID",
+  });
+});
+
 router.delete("/:productId", (req, res, next) => {
   res.status(200).json({
     message: "You deleted an ID",
